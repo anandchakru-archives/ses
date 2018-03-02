@@ -1,6 +1,6 @@
 # java-getting-started
 
-[![CircleCI](https://circleci.com/gh/heroku/java-getting-started.svg?style=svg)](https://circleci.com/gh/heroku/java-getting-started)
+[![CircleCI](https://circleci.com/gh/anandchakru/ses.svg?style=svg)](https://circleci.com/gh/anandchakru/ses)
 
 A barebones Java app, which can easily be deployed to Heroku.
 
