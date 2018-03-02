@@ -1,4 +1,4 @@
-package com.example.model;
+package com.rathna.model;
 
 import java.io.Serializable;
 

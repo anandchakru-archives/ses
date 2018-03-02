@@ -1,21 +1,17 @@
-package com.example.model;
+package com.rathna.model;
 
 import java.io.Serializable;
-import org.springframework.hateoas.ResourceSupport;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonInclude(Include.NON_NULL)
 @SuppressWarnings("serial")
-public class Response extends ResourceSupport implements Serializable {
+public class Response implements Serializable {
 	private String payload;
 	private String iv;
 	private String pwd;
 
-	@JsonCreator
-	public Response(@JsonProperty("payload") String payload) {
+	public Response(String payload) {
 		super();
 		this.payload = payload;
 	}

@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.rathna.controller;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.example.Encryptr;
-import com.example.model.Cypher;
-import com.example.model.Request;
-import com.example.model.Response;
+import com.rathna.model.Cypher;
+import com.rathna.model.Request;
+import com.rathna.model.Response;
+import com.rathna.service.Encryptr;
 
 @Controller
 public class Main {
