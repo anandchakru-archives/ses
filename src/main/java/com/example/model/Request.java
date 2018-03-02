@@ -4,20 +4,20 @@ import java.io.Serializable;
 
 @SuppressWarnings("serial")
 public class Request implements Serializable {
-	private String value;
+	private String payload;
 	private String iv;
 	private String pwd;
 
-	public Request(String value, String pwd) {
+	public Request(String payload, String pwd) {
 		super();
-		this.value = value;
+		this.payload = payload;
 		this.pwd = pwd;
 	}
-	public String getValue() {
-		return value;
+	public String getPayload() {
+		return payload;
 	}
-	public String getPwd() {
-		return pwd;
+	public void setPayload(String payload) {
+		this.payload = payload;
 	}
 	public String getIv() {
 		return iv;
@@ -25,8 +25,8 @@ public class Request implements Serializable {
 	public void setIv(String iv) {
 		this.iv = iv;
 	}
-	public void setValue(String value) {
-		this.value = value;
+	public String getPwd() {
+		return pwd;
 	}
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
