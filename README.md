@@ -10,9 +10,10 @@ Simple Encryption Service - Webservice to expose AES-256 symmetric encryption (C
   * Encrypt FooBar with BJsP3xAX9Qq6G5D6 as password using a [HTTP.GET](http://still-hamlet-17048.herokuapp.com/e/FooBar/BJsP3xAX9Qq6G5D6)
   * Decrypt the above using a [HTTP.GET](http://still-hamlet-17048.herokuapp.com/d/cb227bcec3fb608de8a58988701c6977/fa6190fc6cfcee1ffdc9ada1b788dd4c/BJsP3xAX9Qq6G5D6)
   * You can use HTTP.POST like below
-    * curl -d '{"payload":"FooBar", "pwd":"BJsP3xAX9Qq6G5D6"}' -H "Content-Type: application/json" -X POST http://still-hamlet-17048.herokuapp.com/el
-    * curl -d '{"payload":"eb0fa49228d2d4c1b5f59a263b561c1e", "iv":"73a3aca1cebe98b2f7ba81a713b56681", "pwd":"BJsP3xAX9Qq6G5D6"}' -H "Content-Type: application/json" -X POST http://still-hamlet-17048.herokuapp.com/dl
-
+    * Encryption
+    `curl -d '{"payload":"FooBar", "pwd":"BJsP3xAX9Qq6G5D6"}' -H "Content-Type: application/json" -X POST http://still-hamlet-17048.herokuapp.com/el`
+    * Decryption
+    `curl -d '{"payload":"eb0fa49228d2d4c1b5f59a263b561c1e", "iv":"73a3aca1cebe98b2f7ba81a713b56681", "pwd":"BJsP3xAX9Qq6G5D6"}' -H "Content-Type: application/json" -X POST http://still-hamlet-17048.herokuapp.com/dl`
 
 
 ## Running Locally
